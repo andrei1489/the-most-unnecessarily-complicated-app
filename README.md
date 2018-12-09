@@ -37,4 +37,5 @@ On web, you need to:
  - run composer 
  - run npm install in fronted/
  - ng build the code in frontend/
+
 On node, you need to run a container to do `npm install` for you before starting the actual container, so the app can get the dependencies.
