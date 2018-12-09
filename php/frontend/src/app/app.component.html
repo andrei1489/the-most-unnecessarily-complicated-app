@@ -1,0 +1,24 @@
+<div class="chat-container">
+  <mat-card class="main-card">
+    <mat-list class="chat-list">
+      <mat-list-item *ngFor="let message of messages" class="chat-list-item">
+        <div style="color: gray;margin-right: 30px;font-size: small">
+          #{{message.id}} <b>{{message.timestamp|date:'medium'}}</b>
+        </div>
+        <div>{{message.message}}</div>
+      </mat-list-item>
+    </mat-list>
+    <div class="chat-footer-container">
+      <mat-icon>message</mat-icon>
+      <mat-form-field class="chat-input">
+        <input matInput
+               #inputMessage
+               placeholder="Enter message here"
+               maxlength="140"
+               [(ngModel)]="newMessage.message"
+               (keyup.enter)="sendMessage()">
+        <mat-hint align="end">{{inputMessage.value.length}}/140</mat-hint>
+      </mat-form-field>
+    </div>
+  </mat-card>
+</div>

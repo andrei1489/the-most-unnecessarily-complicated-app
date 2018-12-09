@@ -14,7 +14,7 @@ var url = "course-redis";
 var client1 = redis.createClient(6379, url);
 
 client1.on('message', function(chan, msg) {
-    io.sockets.emit("messages",msg);
+    io.sockets.emit("message",msg);
     console.log("emitted message:"+msg);
 });
 

@@ -1,0 +1,14 @@
+old_sound_rabbit_mq:
+  connections:
+    default:
+      host: '%rabbitmq_host%'
+      user: '%rabbitmq_user%'
+      password: '%rabbitmq_password%'
+      vhost: '%rabbitmq_my_project_vhost%'
+  producers:
+    messages:
+      connection: default
+      exchange_options:
+        name: messages
+        type: direct
+      queue_options: {name: "messages", durable: true }
