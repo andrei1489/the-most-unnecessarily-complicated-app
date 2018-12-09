@@ -13,12 +13,12 @@ Have an interface where you can see messages and post them
 - stores the new message in the db
 - serves messages from the db
 - pushes to a rabbitmq server the new message
-- Symfony 4
+- Symfony 4 + Angular 7
 
 ### Java service
 - reads from a queue, gets new message
 - publishes to a redis topic
-- standard java 8
+- Spring Boot
 
 ### Nodejs service
 - subscribes to a topic
@@ -30,3 +30,9 @@ Have an interface where you can see messages and post them
 - Redis server (latest)
 - MySQL server (latest)
 - PHPMyAdmin (latest)
+
+### Commands to run
+On web, you need to:
+ - run migrations 
+ - run composer 
+ - ng build the code in frontend/
