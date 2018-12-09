@@ -29,3 +29,4 @@ Have an interface where you can see messages and post them
 - RabbitMQ server (latest)
 - Redis server (latest)
 - MySQL server (latest)
+- PHPMyAdmin (latest)

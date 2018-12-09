@@ -1,0 +1,4 @@
+/.idea
+/docker-compose/
+/node/node_modules
+/java/.idea
