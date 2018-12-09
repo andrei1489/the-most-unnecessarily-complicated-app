@@ -1,5 +1,5 @@
 # the-most-unnecessarily-complicated-app
-An absurd app, that is unnecessarily complicated, in order to show off docker compose
+An absurd app, that is unnecessarily complicated in order to show off docker compose
 
 ![alt text](the-most-complicated-app.png "Logo Title Text 1")
 
